@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>DELICIOUS ICE CREAM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>DELICIOUS ICE CREAM</h1>
+        <nav>
+            <u1>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#flavours">FLAVOURS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </u1>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>WELCOME TO THE WORLD OF ICE CREAM</h2>
+        <P>COOL DOWN WITH OUR VARIETY OF DELICIOUSICE CREAM FLAVOURS.</P>
+        <img src="hero.jpg" height="700px" width="800px" alt="Ice cream hero" class="hero-img" />
+    </section>
+    <section id="flavours">
+        <h2>Our Flavours</h2>
+        <div class="flavor-list">
+            <div class="flavor" onclick="addToCart('Vanilla', 80)">
+                <img src="vanilla.jpg" alt="Vanilla Ice Cream" width="100" />
+                <p>Vanilla - ₹80</p>
+            </div>
+            <div class="flavor" onclick="addToCart('Chocolate', 100)">
+                <img src="chocolate.jpg" alt="Chocolate Ice Cream" width="100" />
+                <p>Chocolate - ₹100</p>
+            </div>
+            <div class="flavor" onclick="addToCart('Butterscotch', 120)">
+                <img src="mint.jpg" alt="Butterscotch Ice Cream" width="100" />
+                <p>Butterscotch - ₹120</p>
+            </div>
+            <div class="flavor" onclick="addToCart('Strawberry', 135)">
+                <img src="strawberry.jpg" alt="Strawberry Ice Cream" width="100" />
+                <p>Strawberry - ₹135</p>
+            </div>
+        </div>
+
+        <div id="cart">
+            <center>
+                <h3>Your Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: ₹<span id="total-price">0.00</span></p>
+            </center>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="Text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your email" required />
+            </textarea placeholder="Your Message" required></textarea>
+            <button type="Submit">send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Delicious Ice Cream</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+
+</html>
